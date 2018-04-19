@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		2B151994208765DC00F0050B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B151993208765DC00F0050B /* AppDelegate.swift */; };
 		2B151996208765DC00F0050B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B151995208765DC00F0050B /* ViewController.swift */; };
-		2B151999208765DC00F0050B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B151997208765DC00F0050B /* Main.storyboard */; };
 		2B15199B208765DD00F0050B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B15199A208765DD00F0050B /* Assets.xcassets */; };
-		2B15199E208765DD00F0050B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B15199C208765DD00F0050B /* LaunchScreen.storyboard */; };
 		2B1519A9208765DD00F0050B /* FTSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1519A8208765DD00F0050B /* FTSTests.swift */; };
 		2B1519B4208765DD00F0050B /* FTSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1519B3208765DD00F0050B /* FTSUITests.swift */; };
+		2B1519C22087732000F0050B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1519C12087732000F0050B /* libsqlite3.tbd */; };
+		2BA3C3D620887A01001FD6E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BA3C3D520887A01001FD6E2 /* Main.storyboard */; };
+		2BA3C3D820887A09001FD6E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BA3C3D720887A09001FD6E2 /* LaunchScreen.storyboard */; };
+		2BC746C42088CA4D002BCC47 /* article1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2BC746C32088CA4D002BCC47 /* article1.txt */; };
+		FD834B1BCE0D669EBD2A6215 /* libPods-FTS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F762CD9B6606BCB2FCCE75D5 /* libPods-FTS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27C11A75A3D58B9B2200BE60 /* Pods-FTS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FTS/Pods-FTS.debug.xcconfig"; sourceTree = "<group>"; };
 		2B151990208765DC00F0050B /* FTS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B151993208765DC00F0050B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B151995208765DC00F0050B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2B151998208765DC00F0050B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B15199A208765DD00F0050B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2B15199D208765DD00F0050B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B15199F208765DD00F0050B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B1519A4208765DD00F0050B /* FTSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B1519A8208765DD00F0050B /* FTSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTSTests.swift; sourceTree = "<group>"; };
@@ -47,6 +49,12 @@
 		2B1519AF208765DD00F0050B /* FTSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B1519B3208765DD00F0050B /* FTSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTSUITests.swift; sourceTree = "<group>"; };
 		2B1519B5208765DD00F0050B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B1519C12087732000F0050B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		2BA3C3D520887A01001FD6E2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		2BA3C3D720887A09001FD6E2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2BC746C32088CA4D002BCC47 /* article1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = article1.txt; sourceTree = "<group>"; };
+		C9F42E8F67F6F5DAE31F5E40 /* Pods-FTS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTS.release.xcconfig"; path = "Pods/Target Support Files/Pods-FTS/Pods-FTS.release.xcconfig"; sourceTree = "<group>"; };
+		F762CD9B6606BCB2FCCE75D5 /* libPods-FTS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FTS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B1519C22087732000F0050B /* libsqlite3.tbd in Frameworks */,
+				FD834B1BCE0D669EBD2A6215 /* libPods-FTS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +91,8 @@
 				2B1519A7208765DD00F0050B /* FTSTests */,
 				2B1519B2208765DD00F0050B /* FTSUITests */,
 				2B151991208765DC00F0050B /* Products */,
+				48CA0F667F8B2AD2DD5D9B11 /* Pods */,
+				F92347C5A280B757FFEDFAB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,10 +110,11 @@
 			isa = PBXGroup;
 			children = (
 				2B151993208765DC00F0050B /* AppDelegate.swift */,
+				2BA3C3D720887A09001FD6E2 /* LaunchScreen.storyboard */,
 				2B151995208765DC00F0050B /* ViewController.swift */,
-				2B151997208765DC00F0050B /* Main.storyboard */,
+				2BC746C32088CA4D002BCC47 /* article1.txt */,
+				2BA3C3D520887A01001FD6E2 /* Main.storyboard */,
 				2B15199A208765DD00F0050B /* Assets.xcassets */,
-				2B15199C208765DD00F0050B /* LaunchScreen.storyboard */,
 				2B15199F208765DD00F0050B /* Info.plist */,
 			);
 			path = FTS;
@@ -125,6 +138,24 @@
 			path = FTSUITests;
 			sourceTree = "<group>";
 		};
+		48CA0F667F8B2AD2DD5D9B11 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27C11A75A3D58B9B2200BE60 /* Pods-FTS.debug.xcconfig */,
+				C9F42E8F67F6F5DAE31F5E40 /* Pods-FTS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F92347C5A280B757FFEDFAB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B1519C12087732000F0050B /* libsqlite3.tbd */,
+				F762CD9B6606BCB2FCCE75D5 /* libPods-FTS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,6 +163,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B1519B8208765DD00F0050B /* Build configuration list for PBXNativeTarget "FTS" */;
 			buildPhases = (
+				1377609B7E45B023D0D6F045 /* [CP] Check Pods Manifest.lock */,
 				2B15198C208765DC00F0050B /* Sources */,
 				2B15198D208765DC00F0050B /* Frameworks */,
 				2B15198E208765DC00F0050B /* Resources */,
@@ -229,9 +261,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B15199E208765DD00F0050B /* LaunchScreen.storyboard in Resources */,
+				2BA3C3D820887A09001FD6E2 /* LaunchScreen.storyboard in Resources */,
 				2B15199B208765DD00F0050B /* Assets.xcassets in Resources */,
-				2B151999208765DC00F0050B /* Main.storyboard in Resources */,
+				2BA3C3D620887A01001FD6E2 /* Main.storyboard in Resources */,
+				2BC746C42088CA4D002BCC47 /* article1.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +283,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1377609B7E45B023D0D6F045 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FTS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2B15198C208765DC00F0050B /* Sources */ = {
@@ -291,25 +345,6 @@
 			targetProxy = 2B1519B0208765DD00F0050B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		2B151997208765DC00F0050B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2B151998208765DC00F0050B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2B15199C208765DD00F0050B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2B15199D208765DD00F0050B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2B1519B6208765DD00F0050B /* Debug */ = {
@@ -428,10 +463,13 @@
 		};
 		2B1519B9208765DD00F0050B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27C11A75A3D58B9B2200BE60 /* Pods-FTS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KLFD6CD68C;
 				INFOPLIST_FILE = FTS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -445,10 +483,13 @@
 		};
 		2B1519BA208765DD00F0050B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9F42E8F67F6F5DAE31F5E40 /* Pods-FTS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KLFD6CD68C;
 				INFOPLIST_FILE = FTS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
