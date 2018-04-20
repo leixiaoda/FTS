@@ -11,21 +11,21 @@ import SQLite
 //import SQLite3
 
 class ViewController: UIViewController {
-    
+    var db: Connection!
+    //        let normalTable = Table("Files")
+    let table = VirtualTable("Files")
+    let id = Expression<Int>("id")
+    let text = Expression<String>("text")
+    var snippet = Expression<String>("")
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.test()
+
+        view.backgroundColor = .white
+        self.doSomething()
     }
 
-    func test() {
-        // 声明变量
-        var db: Connection!
-//        let normalTable = Table("Files")
-        let table = VirtualTable("Files")
-        let id = Expression<String>("id")
-        let text = Expression<String>("text")
-        var snippet = Expression<String>("")
-
+    func doSomething() {
         // 初始化
         let sqlFilePath = NSHomeDirectory() + "/Documents" + "/file.sqlite3"
         var dbConnect: Connection?
@@ -54,42 +54,39 @@ class ViewController: UIViewController {
         }
 
         // 插入数据
-        do {
-            let insert = table.insert(id <- "1", text <- self.article1())
-            try db.run(insert)
-        } catch {
-            print(error)
-        }
-
-        do {
-            let insert = table.insert(id <- "2", text <- "world")
-            try db.run(insert)
-        } catch {
-            print(error)
-        }
-
-        do {
-            let insert = table.insert(id <- "3", text <- "world break")
-            try db.run(insert)
-        } catch {
-            print(error)
-        }
+        self.insert(1)
+        self.insert(2)
+        self.insert(3)
+        self.insert(4)
+        self.insert(5)
+        self.insert(6)
+        self.insert(7)
+        self.insert(8)
 
         snippet = self.snippetWrapper(column: text, tableName: "Files")
 
         // 查询
-        let matchQuery: QueryType = table.select(snippet, id, text).match("all")
+        let matchQuery: QueryType = table.select(snippet, id, text).match("we")
         let results = try? db?.prepare(matchQuery)
 
         if let concreteResults = results {
             let _ = concreteResults?.compactMap({
-                print("\($0[id]), \($0[snippet]), \($0[text])")
+                print("\($0[id]), \($0[snippet])")
             })
         }
     }
 
-    func article1() -> String {
-        guard let path = Bundle.main.path(forResource: "article1", ofType: "txt") else { return ""}
+    func insert(_ index: Int) {
+        do {
+            let insert = table.insert(id <- index, text <- self.article(index))
+            try db.run(insert)
+        } catch {
+            print(error)
+        }
+    }
+
+    func article(_ index: Int) -> String {
+        guard let path = Bundle.main.path(forResource: "article\(index)", ofType: "txt") else { return ""}
         let content = try? String(contentsOfFile: path, encoding: String.Encoding.utf8)
 
         return content ?? ""
@@ -103,7 +100,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 

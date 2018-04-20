@@ -13,9 +13,15 @@
 		2B1519A9208765DD00F0050B /* FTSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1519A8208765DD00F0050B /* FTSTests.swift */; };
 		2B1519B4208765DD00F0050B /* FTSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1519B3208765DD00F0050B /* FTSUITests.swift */; };
 		2B1519C22087732000F0050B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1519C12087732000F0050B /* libsqlite3.tbd */; };
-		2BA3C3D620887A01001FD6E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BA3C3D520887A01001FD6E2 /* Main.storyboard */; };
 		2BA3C3D820887A09001FD6E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BA3C3D720887A09001FD6E2 /* LaunchScreen.storyboard */; };
 		2BC746C42088CA4D002BCC47 /* article1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2BC746C32088CA4D002BCC47 /* article1.txt */; };
+		2BE2B52E20898F1A00A03218 /* article2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2BE2B52D20898F1900A03218 /* article2.txt */; };
+		2BE2B5352089944800A03218 /* article8.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2BE2B52F2089944800A03218 /* article8.txt */; };
+		2BE2B5362089944800A03218 /* article5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2BE2B5302089944800A03218 /* article5.txt */; };
+		2BE2B5372089944800A03218 /* article7.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2BE2B5312089944800A03218 /* article7.txt */; };
+		2BE2B5382089944800A03218 /* article4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2BE2B5322089944800A03218 /* article4.txt */; };
+		2BE2B5392089944800A03218 /* article6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2BE2B5332089944800A03218 /* article6.txt */; };
+		2BE2B53A2089944800A03218 /* article3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2BE2B5342089944800A03218 /* article3.txt */; };
 		FD834B1BCE0D669EBD2A6215 /* libPods-FTS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F762CD9B6606BCB2FCCE75D5 /* libPods-FTS.a */; };
 /* End PBXBuildFile section */
 
@@ -50,9 +56,15 @@
 		2B1519B3208765DD00F0050B /* FTSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTSUITests.swift; sourceTree = "<group>"; };
 		2B1519B5208765DD00F0050B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B1519C12087732000F0050B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		2BA3C3D520887A01001FD6E2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		2BA3C3D720887A09001FD6E2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BC746C32088CA4D002BCC47 /* article1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = article1.txt; sourceTree = "<group>"; };
+		2BE2B52D20898F1900A03218 /* article2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = article2.txt; sourceTree = "<group>"; };
+		2BE2B52F2089944800A03218 /* article8.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = article8.txt; sourceTree = "<group>"; };
+		2BE2B5302089944800A03218 /* article5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = article5.txt; sourceTree = "<group>"; };
+		2BE2B5312089944800A03218 /* article7.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = article7.txt; sourceTree = "<group>"; };
+		2BE2B5322089944800A03218 /* article4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = article4.txt; sourceTree = "<group>"; };
+		2BE2B5332089944800A03218 /* article6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = article6.txt; sourceTree = "<group>"; };
+		2BE2B5342089944800A03218 /* article3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = article3.txt; sourceTree = "<group>"; };
 		C9F42E8F67F6F5DAE31F5E40 /* Pods-FTS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTS.release.xcconfig"; path = "Pods/Target Support Files/Pods-FTS/Pods-FTS.release.xcconfig"; sourceTree = "<group>"; };
 		F762CD9B6606BCB2FCCE75D5 /* libPods-FTS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FTS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -113,7 +125,13 @@
 				2BA3C3D720887A09001FD6E2 /* LaunchScreen.storyboard */,
 				2B151995208765DC00F0050B /* ViewController.swift */,
 				2BC746C32088CA4D002BCC47 /* article1.txt */,
-				2BA3C3D520887A01001FD6E2 /* Main.storyboard */,
+				2BE2B52D20898F1900A03218 /* article2.txt */,
+				2BE2B5342089944800A03218 /* article3.txt */,
+				2BE2B5322089944800A03218 /* article4.txt */,
+				2BE2B5302089944800A03218 /* article5.txt */,
+				2BE2B5332089944800A03218 /* article6.txt */,
+				2BE2B5312089944800A03218 /* article7.txt */,
+				2BE2B52F2089944800A03218 /* article8.txt */,
 				2B15199A208765DD00F0050B /* Assets.xcassets */,
 				2B15199F208765DD00F0050B /* Info.plist */,
 			);
@@ -261,10 +279,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BE2B52E20898F1A00A03218 /* article2.txt in Resources */,
+				2BE2B5362089944800A03218 /* article5.txt in Resources */,
+				2BE2B5382089944800A03218 /* article4.txt in Resources */,
+				2BE2B5372089944800A03218 /* article7.txt in Resources */,
+				2BE2B5392089944800A03218 /* article6.txt in Resources */,
 				2BA3C3D820887A09001FD6E2 /* LaunchScreen.storyboard in Resources */,
 				2B15199B208765DD00F0050B /* Assets.xcassets in Resources */,
-				2BA3C3D620887A01001FD6E2 /* Main.storyboard in Resources */,
 				2BC746C42088CA4D002BCC47 /* article1.txt in Resources */,
+				2BE2B5352089944800A03218 /* article8.txt in Resources */,
+				2BE2B53A2089944800A03218 /* article3.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
