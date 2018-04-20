@@ -22,6 +22,8 @@
 		2BE2B5382089944800A03218 /* article4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2BE2B5322089944800A03218 /* article4.txt */; };
 		2BE2B5392089944800A03218 /* article6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2BE2B5332089944800A03218 /* article6.txt */; };
 		2BE2B53A2089944800A03218 /* article3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2BE2B5342089944800A03218 /* article3.txt */; };
+		2BE2B53C2089C78C00A03218 /* NormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2B53B2089C78C00A03218 /* NormalViewController.swift */; };
+		2BE2B53E2089D50300A03218 /* article0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2BE2B53D2089D50300A03218 /* article0.txt */; };
 		FD834B1BCE0D669EBD2A6215 /* libPods-FTS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F762CD9B6606BCB2FCCE75D5 /* libPods-FTS.a */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +67,8 @@
 		2BE2B5322089944800A03218 /* article4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = article4.txt; sourceTree = "<group>"; };
 		2BE2B5332089944800A03218 /* article6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = article6.txt; sourceTree = "<group>"; };
 		2BE2B5342089944800A03218 /* article3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = article3.txt; sourceTree = "<group>"; };
+		2BE2B53B2089C78C00A03218 /* NormalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalViewController.swift; sourceTree = "<group>"; };
+		2BE2B53D2089D50300A03218 /* article0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = article0.txt; sourceTree = "<group>"; };
 		C9F42E8F67F6F5DAE31F5E40 /* Pods-FTS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTS.release.xcconfig"; path = "Pods/Target Support Files/Pods-FTS/Pods-FTS.release.xcconfig"; sourceTree = "<group>"; };
 		F762CD9B6606BCB2FCCE75D5 /* libPods-FTS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FTS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -124,6 +128,8 @@
 				2B151993208765DC00F0050B /* AppDelegate.swift */,
 				2BA3C3D720887A09001FD6E2 /* LaunchScreen.storyboard */,
 				2B151995208765DC00F0050B /* ViewController.swift */,
+				2BE2B53B2089C78C00A03218 /* NormalViewController.swift */,
+				2BE2B53D2089D50300A03218 /* article0.txt */,
 				2BC746C32088CA4D002BCC47 /* article1.txt */,
 				2BE2B52D20898F1900A03218 /* article2.txt */,
 				2BE2B5342089944800A03218 /* article3.txt */,
@@ -283,6 +289,7 @@
 				2BE2B5362089944800A03218 /* article5.txt in Resources */,
 				2BE2B5382089944800A03218 /* article4.txt in Resources */,
 				2BE2B5372089944800A03218 /* article7.txt in Resources */,
+				2BE2B53E2089D50300A03218 /* article0.txt in Resources */,
 				2BE2B5392089944800A03218 /* article6.txt in Resources */,
 				2BA3C3D820887A09001FD6E2 /* LaunchScreen.storyboard in Resources */,
 				2B15199B208765DD00F0050B /* Assets.xcassets in Resources */,
@@ -335,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B151996208765DC00F0050B /* ViewController.swift in Sources */,
+				2BE2B53C2089C78C00A03218 /* NormalViewController.swift in Sources */,
 				2B151994208765DC00F0050B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

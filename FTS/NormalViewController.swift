@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  NormalViewController.swift
 //  FTS
 //
 //  Created by bytedance on 2018/4/18.
@@ -10,11 +10,10 @@ import UIKit
 import SQLite
 //import SQLite3
 
-class ViewController: UIViewController {
+class NormalViewController: UIViewController {
     var db: Connection!
-    //        let normalTable = Table("Files")
-    let table = VirtualTable("Files")
-    let id = Expression<Int>("docid")
+    let normalTable = Table("NormalFiles")
+    let id = Expression<Int>("id")
     let text = Expression<String>("text")
     var snippet = Expression<String>("")
 
@@ -47,7 +46,10 @@ class ViewController: UIViewController {
         //            print(error)
         //        }
         do {
-            let create = table.create(.FTS4(text))
+            let create = normalTable.create() {t in
+                t.column(id, primaryKey: true)
+                t.column(text)
+            }
             try db.run(create)
         } catch {
             print(error)
@@ -66,18 +68,24 @@ class ViewController: UIViewController {
 //            self.insert(8 + 9 * index)
 //        }
 
-        snippet = self.snippetWrapper(column: text, tableName: "Files")
-
         // 查询
+//        let matchQuery: QueryType = normalTable.select(text).filter(text.like("%we%"))
+//        let results = try? db?.prepare(matchQuery)
+//
+//        if let concreteResults = results {
+//            for data in concreteResults {
+//                print("\(data[id])")
+//            }
+//        }
+
         let startTime = Date()
 
-        let matchQuery: QueryType = table.select(snippet, id, text).match("automatically")
+        let matchQuery = normalTable.filter(text.like("%automatically%"))
         let results = try? db?.prepare(matchQuery)
-
         if let concreteResults = results {
-            let _ = concreteResults?.compactMap({
-                print("\($0[id]), \($0[snippet])")
-            })
+            for user in concreteResults! {
+                print("------\(user[id])")
+            }
         }
 
         let endTime = Date()
@@ -87,7 +95,7 @@ class ViewController: UIViewController {
 
     func insert(_ index: Int) {
         do {
-            let insert = table.insert(id <- index, text <- self.article(index))
+            let insert = normalTable.insert(id <- index, text <- self.article(index))
             try db.run(insert)
         } catch {
             print(error)
@@ -101,13 +109,8 @@ class ViewController: UIViewController {
         return content ?? ""
     }
 
-    func snippetWrapper(column: Expression<String>, tableName: String) -> Expression<String> {
-        return Expression("snippet(\(tableName))", column.bindings)
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 }
-
