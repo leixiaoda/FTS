@@ -109,7 +109,7 @@ class ViewController: UIViewController {
 
         // create table
         do {
-            let create = table.create(.FTS4(text))
+            let create = table.create(.FTS4(text), ifNotExists: true)
             try db.run(create)
         } catch {
             print(error)
@@ -117,7 +117,7 @@ class ViewController: UIViewController {
 
         // insert data
         if !UserDefaults.standard.bool(forKey: dbInitializationKey) {
-            for index in 0...50 {
+            for index in 0...200 {
                 self.insert(0 + 9 * index)
                 self.insert(1 + 9 * index)
                 self.insert(2 + 9 * index)
