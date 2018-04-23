@@ -46,7 +46,7 @@ class NormalViewController: UIViewController {
         //            print(error)
         //        }
         do {
-            let create = normalTable.create() {t in
+            let create = normalTable.create() { t in
                 t.column(id, primaryKey: true)
                 t.column(text)
             }

@@ -71,13 +71,24 @@ class ViewController: UIViewController {
         // 查询
         let startTime = Date()
 
-        let matchQuery: QueryType = table.select(snippet, id, text).match("automatically")
-        let results = try? db?.prepare(matchQuery)
+        // FTS
+//        let matchQuery: QueryType = table.select("docid").match("automatically")
+//        let results = try? db?.prepare(matchQuery)
+
+        let results = try? db?.prepare("SELECT docid FROM Files WHERE text MATCH 'automatically'")
+
+        // 普通查询
+//        let matchQuery = table.filter(text.like("%automatically%"))
+//        let results = try? db?.prepare(matchQuery)
+//
+//        let results = try? db?.prepare("SELECT docid FROM Files WHERE text LIKE '%automatically%'")
 
         if let concreteResults = results {
-            let _ = concreteResults?.compactMap({
-                print("\($0[id]), \($0[snippet])")
-            })
+            var count = 0
+            for _ in concreteResults! {
+                count += 1
+            }
+            print("count: \(count)")
         }
 
         let endTime = Date()
