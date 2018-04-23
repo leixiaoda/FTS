@@ -8,7 +8,6 @@
 
 import UIKit
 import SQLite
-//import SQLite3
 
 class NormalViewController: UIViewController {
     var db: Connection!
