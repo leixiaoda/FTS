@@ -153,9 +153,9 @@ class ViewController: UIViewController {
 
         // display results
         var displayText = ""
-        if let concreteResults = results {
+        if let results = results, let concreteResults = results {
             var count = 0
-            for _ in concreteResults! {
+            for _ in concreteResults {
                 count += 1
             }
             displayText = "命中结果:\(count)"
